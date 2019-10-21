@@ -382,7 +382,8 @@ public class CharacterController2D : MonoBehaviour
 						float flushDistance = Mathf.Sign( deltaMovement.x ) * ( _raycastHit.distance - skinWidth );
 						transform.Translate( new Vector2( flushDistance, 0 ) );
 					}
-					break;
+					//break;
+					continue;
 				}
 
 				// set our new deltaMovement and recalculate the rayDistance taking it into account
